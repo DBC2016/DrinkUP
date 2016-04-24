@@ -14,6 +14,12 @@
 		62DCB5791CCA5EB100150D9E /* DrinkUP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62DCB5771CCA5EB100150D9E /* DrinkUP.xcdatamodeld */; };
 		62DCB57B1CCA5EB100150D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62DCB57A1CCA5EB100150D9E /* Assets.xcassets */; };
 		62DCB57E1CCA5EB100150D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DCB57C1CCA5EB100150D9E /* LaunchScreen.storyboard */; };
+		62DCB5871CCA5F2100150D9E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCB5861CCA5F2100150D9E /* DetailViewController.m */; };
+		62DCB5901CCAAF3600150D9E /* Occasion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCB5891CCAAF3600150D9E /* Occasion+CoreDataProperties.m */; };
+		62DCB5911CCAAF3600150D9E /* Occasion.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCB58B1CCAAF3600150D9E /* Occasion.m */; };
+		62DCB5921CCAAF3600150D9E /* Drink+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCB58D1CCAAF3600150D9E /* Drink+CoreDataProperties.m */; };
+		62DCB5931CCAAF3600150D9E /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCB58F1CCAAF3600150D9E /* Drink.m */; };
+		62DCB5981CCCAFD500150D9E /* OccasionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCB5971CCCAFD500150D9E /* OccasionTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,18 @@
 		62DCB57A1CCA5EB100150D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62DCB57D1CCA5EB100150D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62DCB57F1CCA5EB100150D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62DCB5851CCA5F2100150D9E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		62DCB5861CCA5F2100150D9E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		62DCB5881CCAAF3600150D9E /* Occasion+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Occasion+CoreDataProperties.h"; sourceTree = "<group>"; };
+		62DCB5891CCAAF3600150D9E /* Occasion+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Occasion+CoreDataProperties.m"; sourceTree = "<group>"; };
+		62DCB58A1CCAAF3600150D9E /* Occasion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Occasion.h; sourceTree = "<group>"; };
+		62DCB58B1CCAAF3600150D9E /* Occasion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Occasion.m; sourceTree = "<group>"; };
+		62DCB58C1CCAAF3600150D9E /* Drink+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Drink+CoreDataProperties.h"; sourceTree = "<group>"; };
+		62DCB58D1CCAAF3600150D9E /* Drink+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Drink+CoreDataProperties.m"; sourceTree = "<group>"; };
+		62DCB58E1CCAAF3600150D9E /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
+		62DCB58F1CCAAF3600150D9E /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
+		62DCB5961CCCAFD500150D9E /* OccasionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccasionTableViewCell.h; sourceTree = "<group>"; };
+		62DCB5971CCCAFD500150D9E /* OccasionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccasionTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +78,19 @@
 		62DCB56A1CCA5EB100150D9E /* DrinkUP */ = {
 			isa = PBXGroup;
 			children = (
+				62DCB5851CCA5F2100150D9E /* DetailViewController.h */,
+				62DCB5861CCA5F2100150D9E /* DetailViewController.m */,
 				62DCB56E1CCA5EB100150D9E /* AppDelegate.h */,
 				62DCB56F1CCA5EB100150D9E /* AppDelegate.m */,
 				62DCB5711CCA5EB100150D9E /* ViewController.h */,
 				62DCB5721CCA5EB100150D9E /* ViewController.m */,
 				62DCB5741CCA5EB100150D9E /* Main.storyboard */,
+				62DCB5961CCCAFD500150D9E /* OccasionTableViewCell.h */,
+				62DCB5971CCCAFD500150D9E /* OccasionTableViewCell.m */,
 				62DCB57A1CCA5EB100150D9E /* Assets.xcassets */,
 				62DCB57C1CCA5EB100150D9E /* LaunchScreen.storyboard */,
 				62DCB57F1CCA5EB100150D9E /* Info.plist */,
-				62DCB5771CCA5EB100150D9E /* DrinkUP.xcdatamodeld */,
+				62DCB5941CCAAF4200150D9E /* Data */,
 				62DCB56B1CCA5EB100150D9E /* Supporting Files */,
 			);
 			path = DrinkUP;
@@ -80,6 +102,22 @@
 				62DCB56C1CCA5EB100150D9E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62DCB5941CCAAF4200150D9E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				62DCB5771CCA5EB100150D9E /* DrinkUP.xcdatamodeld */,
+				62DCB5881CCAAF3600150D9E /* Occasion+CoreDataProperties.h */,
+				62DCB5891CCAAF3600150D9E /* Occasion+CoreDataProperties.m */,
+				62DCB58A1CCAAF3600150D9E /* Occasion.h */,
+				62DCB58B1CCAAF3600150D9E /* Occasion.m */,
+				62DCB58C1CCAAF3600150D9E /* Drink+CoreDataProperties.h */,
+				62DCB58D1CCAAF3600150D9E /* Drink+CoreDataProperties.m */,
+				62DCB58E1CCAAF3600150D9E /* Drink.h */,
+				62DCB58F1CCAAF3600150D9E /* Drink.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DCB5921CCAAF3600150D9E /* Drink+CoreDataProperties.m in Sources */,
+				62DCB5901CCAAF3600150D9E /* Occasion+CoreDataProperties.m in Sources */,
 				62DCB5731CCA5EB100150D9E /* ViewController.m in Sources */,
+				62DCB5871CCA5F2100150D9E /* DetailViewController.m in Sources */,
+				62DCB5981CCCAFD500150D9E /* OccasionTableViewCell.m in Sources */,
+				62DCB5911CCAAF3600150D9E /* Occasion.m in Sources */,
 				62DCB5791CCA5EB100150D9E /* DrinkUP.xcdatamodeld in Sources */,
+				62DCB5931CCAAF3600150D9E /* Drink.m in Sources */,
 				62DCB5701CCA5EB100150D9E /* AppDelegate.m in Sources */,
 				62DCB56D1CCA5EB100150D9E /* main.m in Sources */,
 			);

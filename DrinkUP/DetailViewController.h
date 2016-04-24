@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OccasionViewController.h
 //  DrinkUP
 //
 //  Created by Demond Childers on 4/22/16.
@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UIViewController
+
+
+@property (nonatomic, weak) ViewController *currentOccasion;
 
 
 
 @end
-

@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Drink" representedClassName="Drink" syncable="YES">
+        <attribute name="drinkAlcPerc" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="drinkDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="drinkName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="drinkOunces" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="relationshipDrinkOccasion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Occasion" inverseName="relationshipOccasionDrink" inverseEntity="Occasion" syncable="YES"/>
+    </entity>
+    <entity name="Occasion" representedClassName="Occasion" syncable="YES">
+        <attribute name="occDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="occLati" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="occLong" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="occName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationshipOccasionDrink" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drink" inverseName="relationshipDrinkOccasion" inverseEntity="Drink" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Occasion" positionX="-36" positionY="9" width="128" height="103"/>
+        <element name="Drink" positionX="0" positionY="72" width="128" height="120"/>
+    </elements>
 </model>
