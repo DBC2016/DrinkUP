@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Occasion.h"
 
-@interface ViewController : UIViewController
 
+@interface DetailViewController :  UIViewController
 
-@property (nonatomic, weak) ViewController *currentOccasion;
+@property (nonatomic, strong) Occasion *newOccasion;
 
 
 
 @end
+
+
+
+

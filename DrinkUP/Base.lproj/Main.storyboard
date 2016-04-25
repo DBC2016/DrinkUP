@@ -38,7 +38,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="eoh-j6-G7q" kind="show" identifier="addOccasionSegue" id="BJk-zY-ZJH"/>
+                                    <segue destination="eoh-j6-G7q" kind="show" identifier="editOccasionSegue" id="BJk-zY-ZJH"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="yZj-yU-YG6" detailTextLabel="2Bg-w4-FUz" rowHeight="88" style="IBUITableViewCellStyleSubtitle" id="vEN-Px-k4F" userLabel="Occassion Table View">
@@ -68,7 +68,11 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="DrinkUP!" id="NbL-yq-shZ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wLv-9w-dXC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wLv-9w-dXC">
+                            <connections>
+                                <segue destination="eoh-j6-G7q" kind="show" identifier="addOccasionSegue" id="6MC-3S-goB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIL-0c-EFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -78,7 +82,7 @@
         <!--Occasion Details-->
         <scene sceneID="gxN-qw-Fvr">
             <objects>
-                <viewController id="eoh-j6-G7q" customClass="OccasionViewController" sceneMemberID="viewController">
+                <viewController id="eoh-j6-G7q" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DTt-4b-Oeu"/>
                         <viewControllerLayoutGuide type="bottom" id="MvD-Cz-XGw"/>
@@ -177,7 +181,7 @@
         <!--Drinks Details-->
         <scene sceneID="l2L-j9-q4W">
             <objects>
-                <viewController id="Z3y-fp-qWZ" sceneMemberID="viewController">
+                <viewController id="Z3y-fp-qWZ" customClass="DrinkViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SPl-Ao-p83"/>
                         <viewControllerLayoutGuide type="bottom" id="LwC-88-WdC"/>
@@ -223,4 +227,7 @@
             <point key="canvasLocation" x="-278" y="301"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="BJk-zY-ZJH"/>
+    </inferredMetricsTieBreakers>
 </document>

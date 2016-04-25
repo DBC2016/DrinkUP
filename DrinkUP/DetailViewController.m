@@ -14,11 +14,11 @@
 
 
 
-@interface ViewController ()
+@interface UIViewController ()
 
 
 @property (nonatomic, strong)       AppDelegate *AppDelegate;
-@property (nonatomic, strong)       NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong)       NSManagedObject *managedObjectContext;
 @property (nonatomic, weak) IBOutlet UITextField  *occName;
 @property (nonatomic, weak) IBOutlet UIDatePicker *occDate;
 @property (nonatomic, weak) IBOutlet UITextField  *occLati;

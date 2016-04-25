@@ -11,35 +11,28 @@
 #import "Drink.h"
 #import "AppDelegate.h"
 #import "DetailViewController.h"
-#import "OccasionTableViewCell.h"
-
-
-
-
-
 
 
 @interface ViewController ()
 
 
-
-@property (nonatomic, strong)   AppDelegate                 *appDelegate;
-@property (nonatomic, strong)   NSManagedObject             *managedObjectContext;
+@property (nonatomic, strong)   AppDelegate             *AppDelegate;
+@property (nonatomic, strong)   NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong)   NSArray                     *occasionArray;
 @property (nonatomic, weak)     IBOutlet   UITableView      *occasionTableView;
 
 
 @end
 
-@implementation ViewController
+@implementation DetailViewController
 
 
 
 #pragma mark - View Methods
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _occasionArray.count;
-}
+//
+//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return _occasionArray.count;
+//}
 
 
 
@@ -62,32 +55,46 @@
 
 #pragma mark-  Interactivity Methods
 
+//-(void)saveAndPop {
+//    [AppDelegate saveContext];
+//    [self.navigationController popViewControllerAnimated:true];
+
 
 
 
 #pragma mark-  Table View Methods
 
-//
+
 //-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
-//    OccasionTableViewCell * cell = (OccasionTableViewCell *
-//}
+//    OccasionTableViewCell * cell = (OccasionTableViewCell *};
 //
 ////
 ////- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
 ////    OccasionTableViewCell *cell = (OccasionTableViewCell *)[[tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-////                                                            }
+//////                                                            }
 
                                                             
 
 #pragma mark-  Core Data Methods
 
 
--(void)addTempRecords
 
 // Add Temp Records for Occasions and Drinks
 
+-(void)addTempRecords {
 
+
+    Occasion *newOccasion = (Occasion *)[NSEntityDescription insertNewObjectForEntityForName:@"Occasion" inManagedObjectContext: xxxxxxxxxxxx];
     
+    [newOccasion setOccName:@"Relation"];
+    [newOccasion setOccDate:[NSDate date]];
+    [newOccasion setOccLati:@"45.675544"];
+    [newOccasion setOccLong:@"54.464654"];
+    
+    
+    
+    
+}
 
 
 //    // Add one person
@@ -119,45 +126,60 @@
 //}
 
 //Set Up Fetch
-//
-//    -(NSArray *)fetchOccasions {
+
+   
+//Execute Core Fetch
+//    -(NSArray *)fetchItems {
 //        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-//        NSEntityDescription *entity = [NSEntityDescription entityForName:@"Occasion" inManagedObjectContext:_managedObjectContext];
-//        [fetchRequest setEntity:entity];
-//        
-//        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"occassionNam" ascending:true];
-//        [fetchRequest setSortDescriptors:@[sortDescriptor]];
-//       
-////Execute Core Fetch
+//        NSEntityDescription *entity = [NSEntityDescription entityForName:@"Occasion" inManagedObjectContext:
 //        NSError *error;
-//        NSArray *fetchResults = [_managedObjectContext executeFetchRequest: error:&error];
+//        NSArray *fetchResults =
+//    
+//}
+
+
+
+
+//    -(NSArray *)fetchItems {
+//        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+//        NSEntityDescription *entity = [NSEntityDescription entityForName:@"ToDoItem" inManagedObjectContext:_managedObjectContext];
+//        [fetchRequest setEntity:entity];
+//        NSError *error;
+//        NSArray *fetchResults = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
 //        return fetchResults;
-//        
-//    }
-
-
-
-
-
 
 
 #pragma mark- Life Cycle Methods
 
 
-
-
-
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
+
+
+//#pragma - Life Cycle Methods
+//
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    _appDelegate = [[UIApplication sharedApplication] delegate];
+//    _managedObjectContext = _appDelegate.managedObjectContext;
+//    //    [self tempAddRecords];
+//    
+//}
+//
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    [self refreshDataAndTable];
+//    NSLog(@"Count: %li",_toDoItemArray.count);
+//}
+//
+//- (void)didReceiveMemoryWarning {
+//    [super didReceiveMemoryWarning];
+//}
